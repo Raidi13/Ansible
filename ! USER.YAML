@@ -1,7 +1,7 @@
 #YAML works on indentation, means space
-- Name: Raidi Kartheek
-  Email: karthik.raidi13@gmail.com
-  Addresses: #list of address
+- name: Raidi Kartheek
+  email: karthik.raidi13@gmail.com
+  addresses: #list of address
   - type: prem
    addressline1: kgm 
    addressline2: vidyanagar
@@ -9,9 +9,9 @@
     addressline1: hyd
     addressline2: ramanthapur 
 
-- Name: Raidi Kartheek
-  Email: karthik.raidi13@gmail.com
-  Addresses: #list of address
+- name: Raidi Kartheek
+  email: karthik.raidi13@gmail.com
+  addresses: #list of address
   - type: prem
    addressline1: kgm 
    addressline2: vidyanagar
