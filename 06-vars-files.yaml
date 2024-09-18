@@ -5,5 +5,5 @@
   tasks: 
   - name: print the information
     ansible.bulitin.debug:
-     msg: "Hi , i am learning {{COURSE }},Duration is: {{DURATION}},Trainer: {{TRANINER}}"
+      msg: "Hi , i am learning {{COURSE }},Duration is: {{DURATION}},Trainer: {{TRANINER}}"
 
