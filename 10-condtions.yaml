@@ -12,4 +12,5 @@
     ansible.builtin.debug:
       msg: "Given number {{ number }} is greater than 10"
     when:  number >= 10
+
     
