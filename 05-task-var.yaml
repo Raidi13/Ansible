@@ -1,0 +1,22 @@
+- name: varible to print
+  hosts: web
+  vars: #paly level all task in this paly have access to this 
+    COURSE: "Devops with Aws"
+    DURATION: "120HRS"
+    TRAINER: "SHIVAKUMAR REDDY"
+  tasks:
+  - name: print the information
+    ansible.builtin.debug:
+     msg: "Hi, i am learning {{COURSE}},{{DURATION}},{{TRAINER}}"
+  
+  - name: print the information 
+    vars: #task level varible
+     COURSE: "Ansible"
+    ansible.builtin.debug:
+     msg: "Hi ,i am learning {{COURSE}},{{DURATION}},{{TRAINER}}"
+  
+  - name: print the information again and again
+    ansible.builtin.debug:
+     msg: "Hi ,i am learning {{COURSE}},{{DURATION}},{{TRAINER}}"
+
+     
