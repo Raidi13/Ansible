@@ -5,12 +5,12 @@
     course: "Devops and AWS"
     duration: 120
     topics:
-      - linux
-      - shell
-      - ansible
-      - teeraform
-      - AWS
-      - K8
+    - linux
+    - shell
+    - ansible
+    - teeraform
+    - AWS
+    - K8
       live: true
       tools: #map/dictionary
         ci: jenkins
