@@ -1,16 +1,16 @@
 # using when condition u have to right a condtion number 10 is >/<
 - name: check the number is less than 10 or not
   hosts: local
-  connections: local
+  connection: local
   vars_promt:
   - name: please enter the  number
     ansible.builtin.debug:
       msg: "Given number {{ NUMBER }} is less that 10"
-    when:  number < 10 #conditional expression
+    when: number < 10 #conditional expression
 
   - name: print this if greater than or equal to 10"
     ansible.builtin.debug:
-      msg: "Given number {{ number }} is greater than 10"
-    when:  number >= 10
-
+      msg: "Given number {{ NUMBER }} is greater than 10"
+    when: number >= 10
     
+
