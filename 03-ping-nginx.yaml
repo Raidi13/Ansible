@@ -1,6 +1,7 @@
 #interview qustion , using ansible install and run nginx
 - name: nginx install and run
   hosts: web
+  become: yes #takes sudo access
   tasks: 
   - name: install nginx
     ansible.builtin.package:
