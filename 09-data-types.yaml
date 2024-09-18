@@ -10,7 +10,7 @@
       - ansible
       - teeraform
       - AWS
-      - k8
+      - K8
       live: true
       tools: #map/dictionary
         ci: jenkins
