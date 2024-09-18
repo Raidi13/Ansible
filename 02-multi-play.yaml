@@ -1,3 +1,4 @@
+
 - name: PLAY-01
   hosts: web
   tasks: 
@@ -6,7 +7,7 @@
       msg: "This is from PLAY-01 and TASK-01"
       
       #PLAY-02
-  - name: PLAY-02
+- name: PLAY-02
     hosts: web
     tasks: 
     - name: PLAY-02  TASK-02
