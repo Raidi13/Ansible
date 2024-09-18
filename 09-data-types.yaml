@@ -9,19 +9,19 @@
       - shell
       - ansible
       - teeraform
-      - aws
+      - AWS
       - k8
       live: true
       tools: #map/dictionary
         ci: jenkins
         cm: ansible
-        cloud: aws
+        cloud: AWS
         aws:
-          - IAM
-          - S3
+        - IAM
+        - S3
   tasks:
   - name: print the courese information
     ansible.builtin.debug:
-      msg: "Hi i am learning {{ course }}, with duration: {{ duration }}, topics are {{ topics }}, and live: {{ live }}, tools are: {{ tools }}"
+      msg: "Hi i am learning {{ course }}, with duration: {{ duration }}, topics are: {{ topics }}, and live: {{ live }}, tools are: {{ tools }}"
 
 
