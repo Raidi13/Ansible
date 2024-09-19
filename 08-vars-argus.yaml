@@ -1,3 +1,4 @@
+#if you take any varible arguments/command line will come 1st
 - name: variables to print
   hosts: web
   tasks: 
