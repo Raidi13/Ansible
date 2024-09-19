@@ -3,7 +3,9 @@
   hosts: local
   connection: local
   vars_prompt:
-  - name: please enter the  number
+  - name: my_number
+    prompt: please enter the  number
+    private: false #not confidential
     ansible.builtin.debug:
       msg: "Given number {{ NUMBER }} is less that 10"
     when: number | int< 10 #conditional expression
