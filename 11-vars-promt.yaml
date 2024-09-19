@@ -1,8 +1,9 @@
 - name: varible from promt
   hosts: web
-  vars_promt:
+  vars_prompt:
   - name: COURSE
     promt: please enter the course name
+    private: false #not confidential
   - name: TRAINER
     promt: enter the trainer name
   - name: DURATION
