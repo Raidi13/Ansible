@@ -13,9 +13,9 @@
       msg: "Given number {{ NUMBER }} is less that 10"
     when: my_number | int< 10 #conditional expression
 
-  - name: print this if greater than or equal to 10"
+  - name: print this if greater than or equal to 10
     ansible.builtin.debug:
-      msg: "Given number {{ NUMBER }} is greater than 10"
+      msg: "Given number {{ my_number }} is greater than 10"
     when: my_number|int >= 10
 
 
