@@ -1,0 +1,13 @@
+#check the is user is exit or noy in my_expence
+- name: create user
+  hosts: web
+  become: yes #root user access
+  task:
+  - name: check the user is exit or not
+    ansible.builtin.command: id expense
+    register: USER #here USER is a variable that get ouput from above command
+
+  - name: print the user information
+    ansible.builtin.debug: 
+      msg: "user info: {{USER}}"
+      
