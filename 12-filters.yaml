@@ -19,14 +19,14 @@
     ansible.builtin.debug:
       msg: "{{ greeting | lower }}"
 
-  - name: getthe unique values
+  - name: getting unique values
     vars:
       numbers: [1,2,3,4,55,3,2,4,5,6]
     ansible.builtin.debug:
       msg: " {{ numbers | unique }} "
 
   
-  - name: getthe min and max values
+  - name: getting min and max values
     vars:
       numbers: [1,2,3,4,55,3,2,4,5,6]
     ansible.builtin.debug:
@@ -44,14 +44,14 @@
   - name: convert list to map
     vars:
       course:
-      - { "key": "name","values": "Devops with Aws" }
-      - { "key": "Duration","values": "120" }
-      - { "key": "Trainer","values": "Shiva Kumar" }
+      - { "key": "name","value": "Devops with Aws" }
+      - { "key": "duration","value": 120 }
+      - { "key": "trainer","value": "Shiva Kumar" }
     ansible.builtin.debug:
       msg: " {{ course | items2dict }}"
 
   - names: check ip address
     vars: 
-        myip: "190.168.1.1"
+      myip: "190.168.1.1"
     ansible.builtin.debug:
       msg: "{{ myip | ansible.untils.ipv4 }}"
