@@ -18,4 +18,4 @@
       msg: "Given number {{ my_number }} is greater than 10"
     when: my_number|int >= 10
 
-
+ 
