@@ -1,0 +1,15 @@
+#install and remove some packages 
+- name: loops
+  hosts: web
+  become: yes
+  tasks:
+  - name: print names
+    ansible.builtin.packages:
+      name: " {{ iteam.name }}"
+      state: "{{ iteam .state }}"
+    loop:
+    - { name: 'mysql', state: 'present' }
+    - { name: 'nginx', state: 'present' }
+    - { name: 'postfix', state: 'absent' }
+    - { name: 'httpd', state: 'absent' }
+    
