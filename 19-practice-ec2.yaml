@@ -3,14 +3,13 @@
   hosts: local
   connection: local
   vars:
-   subnet_id: subnet-02adc7d5d94cd7a07
-   sg_id: "sg-0e914dc599cdf119a"
-   ami_id: "ami-09c813fb71547fc4f"
-   Instances:
-   - mysql
-   - backend
-   - front end
-
+    subnet_id: subnet-02adc7d5d94cd7a07
+    sg_id: "sg-0e914dc599cdf119a"
+    ami_id: "ami-09c813fb71547fc4f"
+    Instances:
+    - mysql
+    - backend
+    - front end
   tasks:
   - name: create ec2 instance
     amazon.aws.ec2_instance:
