@@ -3,9 +3,9 @@
   hosts: local
   connection: local
   vars:
-    subnet_id: subnet-02adc7d5d94cd7a07
-    sg_id: "sg-0e914dc599cdf119a"
-    ami_id: "ami-09c813fb71547fc4f"
+    subnet_id: subnet-02adc7d5d94cd7a07 # go to networking nad subnet id
+    sg_id: "sg-0e914dc599cdf119a" #go to secqurits group and select secqurity id
+    ami_id: "ami-09c813fb71547fc4f" # go to details  ans select ami_id
     instances:
     - mysql
     - backend
@@ -20,6 +20,14 @@
       image_id: "{{ ami_id }}"
     loop: "{{ instances }}"
     register: ec2_instances
+
+  - name: print the output
+    ansible.builtin.debug:
+      msg: "{{ ec2_instances}}"
+
+  - name: print the output
+    ansible.builtin.debug:
+      msg: "{{ ec2-instance }}"
 
 
 
