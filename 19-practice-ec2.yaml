@@ -9,7 +9,7 @@
     Instances:
     - mysql
     - backend
-    - front end
+    - frontend
   tasks:
   - name: create ec2 instance
     amazon.aws.ec2_instance:
