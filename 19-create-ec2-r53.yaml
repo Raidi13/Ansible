@@ -29,7 +29,7 @@
   - name: create r53 private records
     amazon.aws.route53:
       state: present
-      zone: "{{zone }}"
+      zone: "{{ zone }}"
       record: "{{ item.item }}.{{ zone }}" # mysql.aws-user.online
       type: A
       ttl: 1
@@ -41,7 +41,7 @@
   - name: create r53 public records for frontend
     amazon.aws.route53:
       state: present
-      zone: "{{zone }}"
+      zone: "{{ zone }}"
       record: "{{ zone }}" # mysql.aws-user.online
       type: A
       ttl: 1
@@ -51,4 +51,5 @@
     loop: "{{ ec2_instances.results }}"
 
     when: item.item == "fronted"
+
 
