@@ -51,5 +51,6 @@
     loop: "{{ ec2_instances.results }}"
     when: item.item == "frontend" 
     
+    
 
 
